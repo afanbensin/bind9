@@ -1,0 +1,17 @@
+zone "afan.local" {
+    type master;
+    file "/etc/bind/db.local";
+
+    allow-transfer {
+        192.168.10.2;
+    };
+};
+
+zone "10.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.127";
+
+    allow-transfer {
+        192.168.10.2;
+    };
+};
