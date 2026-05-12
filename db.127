@@ -1,14 +1,14 @@
 $TTL 604800
-@       IN      SOA     ns1.afan.local. root.afan.local.
+@       IN      SOA     ns1.afan.local. root.afan.local. (
                         2026051101 ; Serial
                         604800     ; Refresh 
                         86400      ; Retry
                         2419200    ; Expire
-                        604800     ; Negative Cache TTL
+                        604800 )   ; Negative Cache TTL
                         
 @       IN      NS      ns1.afan.local.
 @       IN      NS      ns2.afan.local.
 
 1       IN      PTR     ns1.afan.local.
-1       IN      PTR     mail.afan.local.
+10      IN      PTR     mail.afan.local.
 2       IN      PTR     ns2.afan.local.
